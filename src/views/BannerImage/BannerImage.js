@@ -33,7 +33,7 @@ export default function BannerImage() {
 
   // api call for send banner image title links
   const formHandler = (event) => {
-    if (bannerData.length === 3) {
+    if (bannerData.length === 3 || bannerData.length < 4) {
       warning("Only 3 midea link is allow!");
     } else {
       event.preventDefault();

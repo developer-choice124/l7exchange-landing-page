@@ -42,7 +42,7 @@ const Advantages = () => {
   // api call for send banner image title links
   const formHandler = (event) => {
     event.preventDefault();
-    if (adsData.length === 6) {
+    if (adsData.length === 3 || adsData.length < 4) {
       warning('It is Only allow 3 ads!');
     } else {
       const url = `${BackendApi}/ads`;

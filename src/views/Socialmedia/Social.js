@@ -42,7 +42,7 @@ const Social = () => {
   }
 
   const formHandler = (event) => {
-    if (socialData.length === 6) {
+    if (socialData.length === 6 || socialData.length < 7) {
       warning("Only 6 midea link is allow!");
     } else {
       event.preventDefault();
